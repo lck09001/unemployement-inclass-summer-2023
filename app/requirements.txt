@@ -1,8 +1,13 @@
+# this is the "requirements.txt" file
 
 requests
 
-plotly
-
 pandas
 
+plotly
+
 python-dotenv
+
+
+# for testing:
+pytest
