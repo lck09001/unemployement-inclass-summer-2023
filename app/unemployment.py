@@ -30,16 +30,17 @@ def format_pct(my_number):
 
 
 
-request_url = f"https://www.alphavantage.co/query?function=UNEMPLOYMENT&apikey={API_KEY}"
+    request_url = f"https://www.alphavantage.co/query?function=UNEMPLOYMENT&apikey={API_KEY}"
 
-response = requests.get(request_url)
+    response = requests.get(request_url)
 
-parsed_response = json.loads(response.text)
-print(type(parsed_response))
-pprint(parsed_response)
+    parsed_response = json.loads(response.text)
+    print(type(parsed_response))
+    pprint(parsed_response)
 
 
-data = parsed_response["data"]
+    data = parsed_response["data"]
+    
 
 
 # Challenge A
